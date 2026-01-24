@@ -10,7 +10,6 @@ public class A1_countDigits {
             cnt++;
         }
         return cnt;
-
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
