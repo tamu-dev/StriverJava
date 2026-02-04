@@ -21,7 +21,7 @@ public class A1_selectionSort {
             arr[minIndex] = arr[i];
             arr[i] = temp;
         }
-        
+
         for (int num : arr) {
             System.out.print(num + " ");
         }
