@@ -2,23 +2,22 @@ package Sorting.Sorting_2;
 
 import java.util.Scanner;
 
-public class A2_RecursiveBubbleSort {
-    public static int[] bubbleSort(int[] arr, int n, int i) {
-        if(n==1){
-            return arr;
-        }
-        if(i == n-1){
-            return bubbleSort(arr,n-1,0);
-        }
-        if(arr[i]> arr[i+1]){
-            int temp = arr[i+1];
-            arr[i+1] = arr[i];
-            arr[i] = temp;
+public class A3_RecursiveInsertionSort {
+    public static int[] insertionSort(int[] arr,int n,int i) {
+        if (i == n) return arr;
 
+        int j = i;
+
+        while (j > 0 && arr[j - 1] > arr[j]) {
+            int temp = arr[j - 1];
+            arr[j - 1] = arr[j];
+            arr[j] = temp;
+            j--;
         }
-        return bubbleSort(arr,n,++i);
+
+        insertionSort(arr, n, i+1);
+        return arr;
     }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the Array size");
@@ -28,7 +27,7 @@ public class A2_RecursiveBubbleSort {
         for(int i=0;i<n;i++){
             arr[i] = sc.nextInt();
         }
-        bubbleSort(arr,n,0);
+        insertionSort(arr,n,0);
         for (int num : arr) {
             System.out.print(num + " ");
         }
