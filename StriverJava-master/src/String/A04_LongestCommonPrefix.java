@@ -2,7 +2,7 @@ package String;
 
 import java.util.Scanner;
 
-public class A04_LogestCommonPrefix {
+public class A04_LongestCommonPrefix {
     public static String longestCommonPrefix(String[] str) {
         if(str.length == 0){
             return "";
