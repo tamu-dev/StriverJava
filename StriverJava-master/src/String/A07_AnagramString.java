@@ -23,11 +23,11 @@ public class A07_AnagramString {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter first string= ");
-        String s = sc.nextLine();
+        String first = sc.nextLine();
 
         System.out.println("Enter second string:");
-        String t = sc.nextLine();
+        String second = sc.nextLine();
 
-        System.out.println(isAnagram(s,t));
+        System.out.println(isAnagram(first,second));
     }
 }
