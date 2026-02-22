@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class A15_maxConsecutiveOnce {
     public static int findMaxConsecutiveOnes(int[] arr , int n ) {
         int ans = 0;
-        int cnt = 0;
+        int count = 0;
         for(int i =0;i<n;i++){
             if(arr[i]==1){
-                cnt++;
-                ans = Math.max(ans,cnt);  // Math.max saves the max value
+                count++;
+                ans = Math.max(ans, count);  // Math.max saves the max value
             }else{
-                cnt =0;
+                count =0;
             }
         }
         return ans;
