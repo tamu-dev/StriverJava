@@ -1,5 +1,6 @@
 package BinarySearch.BS_on_1D_Arrays.Medium;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class A08_AggressiveCows {
@@ -17,6 +18,7 @@ public class A08_AggressiveCows {
         return false;
     }
     public static int aggressiveCows(int[] stalls, int cow) {
+        Arrays.sort(stalls);
         int low = 1;
         int high = stalls[stalls.length-1]- stalls[0];
         int ans = 0;
