@@ -63,7 +63,7 @@ public class A12_MedianOfArrays {
         for(int i=0;i<m;i++){
             arrTwo[i] = sc.nextInt();
         }
-        
+
         System.out.println("The answer is "+findMedianSortedArrays(arrOne,arrTwo));
     }
 }
